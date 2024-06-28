@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <style>
+        nav ul li {
+    display: block;
+    margin: 5px 0;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.menu-grid {
+    grid-template-columns: 1fr;
+}
+
+form {
+    padding: 0 10px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل کاربر</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>پروفایل کاربر</h1>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html#home">خانه</a></li>
+                    <li><a href="index.html#about">درباره ما</a></li>
+                    <li><a href="index.html#menu">منو</a></li>
+                    <li><a href="index.html#contact">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile" class="section">
+        <div class="container">
+            <h2>پروفایل</h2>
+            <div id="profile-info">
+                <!-- اطلاعات پروفایل به صورت پویا از JavaScript اضافه می‌شوند -->
+            </div>
+            <form id="profile-form" style="display: none;">
+                <label for="profile-username">نام کاربری:</label>
+                <input type="text" id="profile-username" name="profile-username">
+                
+                <label for="profile-email">ایمیل:</label>
+                <input type="email" id="profile-email" name="profile-email">
+                
+                <label for="profile-password">رمز عبور جدید:</label>
+                <input type="password" id="profile-password" name="profile-password">
+                
+                <button type="submit">به‌روزرسانی پروفایل</button>
+            </form>
+            <button id="edit-profile-button">ویرایش پروفایل</button>
+            <button id="logout-button">خروج</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 رستوران نمونه. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
